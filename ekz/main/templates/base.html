@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'contacts' %}">контакты</a>
+    <a href="{% url 'about' %}">о нас</a>
+    <a href="{% url 'login' %}">login</a>
+    <a href="{% url 'products' %}">продукт</a>
+    <a href="{% url 'index' %}">главная страница</a>
+
+
+</body>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+</html>
